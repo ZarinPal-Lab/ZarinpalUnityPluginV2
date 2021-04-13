@@ -27,7 +27,7 @@ As you may know, ZarinPal offers an easy payment gateway, and currently does not
 How to make a purchase using ZarinPal is as follows:
 
 <ol>
-  <li>You send a <code>PaymentRequest</code> for ZarinPal with parameters <b>MerchantID</b>, <b>Amount</b> ( In Iranian Rials), <b>Description</b> and <b>CallbackUrl</b> . Then ZarinPal will reply to you with a unique purchase ID <b>(Authority)</b>.</li>
+  <li>You send a <code>PaymentRequest</code> for ZarinPal with parameters <b>MerchantID</b>, <b>Amount</b> ( In Rials), <b>Description</b> and <b>CallbackUrl</b> . Then ZarinPal will reply to you with a unique purchase ID <b>(Authority)</b>.</li>
   <li>Then with the Authority in Hand , You call <code>StartPay</code> method and ZarinPal in response will direct you to a payment gateway if the purchase ID is valid and after completing the purchase , Zarinpal send Purchase Result to <b>CallbackUrl</b> you specified in Step 1.</li>
   <li>After completing the purchase, you can send a <code>VerifyPayment</code> request if it is successful, and ZarinPal will send you a <b>RefID</b>, which represents the transaction ID, in case of success.</li>
 </ol>
